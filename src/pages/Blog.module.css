@@ -1,0 +1,197 @@
+.section {
+  padding: 80px 60px;
+  position: relative;
+  z-index: 1;
+}
+
+/* GRID */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1px;
+  background: var(--border);
+  border: 1px solid var(--border);
+}
+
+/* CARD */
+.card {
+  background: var(--surface);
+  padding: 40px 36px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  position: relative;
+  transition: background 0.25s;
+}
+.card:hover { background: var(--surface2); }
+
+.cardBar {
+  position: absolute;
+  top: 0; left: 0; right: 0;
+  height: 3px;
+}
+.cardBar.lime { background: var(--accent2); }
+.cardBar.blue { background: var(--accent); }
+
+.cardMeta {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.tag {
+  font-family: var(--mono);
+  font-size: 0.62rem;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  padding: 4px 12px;
+  border: 1px solid;
+}
+.tag.lime { color: var(--accent2); border-color: rgba(170,255,0,0.3); background: rgba(170,255,0,0.04); }
+.tag.blue { color: var(--accent);  border-color: rgba(0,180,255,0.3); background: rgba(0,180,255,0.04); }
+
+.readTime {
+  font-family: var(--mono);
+  font-size: 0.65rem;
+  color: var(--muted);
+  letter-spacing: 0.06em;
+}
+
+.cardTitle {
+  font-family: 'IBM Plex Sans', sans-serif;
+  font-size: 1.15rem;
+  font-weight: 700;
+  color: #fff;
+  line-height: 1.4;
+  letter-spacing: -0.01em;
+}
+
+.cardExcerpt {
+  font-family: 'IBM Plex Sans', sans-serif;
+  font-size: 0.88rem;
+  color: var(--muted);
+  line-height: 1.75;
+  font-weight: 300;
+  flex: 1;
+}
+
+.cardFooter {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-top: 1px solid var(--border);
+  padding-top: 16px;
+  margin-top: 4px;
+}
+
+.date {
+  font-family: var(--mono);
+  font-size: 0.65rem;
+  color: var(--muted);
+}
+
+.readLink {
+  font-family: 'IBM Plex Sans', sans-serif;
+  font-size: 0.8rem;
+  color: var(--accent);
+  text-decoration: none;
+  transition: color 0.2s;
+}
+.readLink:hover { color: var(--accent2); }
+
+/* LOADING */
+.loadingGrid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1px;
+  background: var(--border);
+  border: 1px solid var(--border);
+}
+.skeleton {
+  background: var(--surface);
+  padding: 40px 36px;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+.skeletonBar {
+  height: 3px;
+  width: 60px;
+  background: var(--border);
+  animation: pulse 1.4s ease-in-out infinite;
+}
+.skeletonTitle {
+  height: 20px;
+  width: 85%;
+  background: var(--border);
+  border-radius: 2px;
+  animation: pulse 1.4s ease-in-out infinite;
+}
+.skeletonLine {
+  height: 12px;
+  width: 100%;
+  background: var(--border);
+  border-radius: 2px;
+  animation: pulse 1.4s ease-in-out infinite;
+}
+@keyframes pulse {
+  0%, 100% { opacity: 0.4; }
+  50% { opacity: 0.8; }
+}
+
+/* NEWSLETTER */
+.newsletter {
+  background: var(--surface);
+  border-top: 1px solid var(--border);
+  padding: 80px 60px;
+}
+.newsletterInner {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+.nlLabel {
+  font-family: var(--mono);
+  font-size: 0.7rem;
+  color: var(--accent);
+  letter-spacing: 0.2em;
+  margin-bottom: 8px;
+}
+.nlTitle {
+  font-family: 'IBM Plex Sans', sans-serif;
+  font-weight: 700;
+  font-size: 1.6rem;
+  color: #fff;
+  letter-spacing: -0.02em;
+  margin-bottom: 8px;
+}
+.nlDesc {
+  font-family: 'IBM Plex Sans', sans-serif;
+  font-size: 0.88rem;
+  color: var(--muted);
+  font-weight: 300;
+}
+.nlBtn {
+  font-family: 'IBM Plex Sans', sans-serif;
+  font-size: 0.88rem;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  padding: 16px 40px;
+  background: var(--accent2);
+  color: var(--bg);
+  text-decoration: none;
+  clip-path: polygon(10px 0%, 100% 0%, calc(100% - 10px) 100%, 0% 100%);
+  transition: all 0.25s;
+  white-space: nowrap;
+}
+.nlBtn:hover { background: #fff; transform: translateY(-2px); }
+
+@media (max-width: 900px) {
+  .section { padding: 60px 24px; }
+  .grid, .loadingGrid { grid-template-columns: 1fr; }
+  .newsletter { padding: 60px 24px; }
+}

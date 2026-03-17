@@ -1,0 +1,44 @@
+.section { padding: 80px 60px; position: relative; z-index: 1; }
+
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 1.6fr;
+  gap: 80px;
+  align-items: start;
+}
+
+.info {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+
+.infoBlock {}
+
+.infoLabel {
+  font-family: var(--mono);
+  font-size: 0.65rem;
+  color: var(--accent);
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+
+.infoBlock p {
+  font-size: 0.88rem;
+  color: var(--muted);
+  line-height: 1.8;
+  font-weight: 300;
+}
+
+.formWrap {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  padding: 48px 40px;
+}
+
+@media (max-width: 900px) {
+  .section { padding: 60px 24px; }
+  .grid { grid-template-columns: 1fr; gap: 40px; }
+  .formWrap { padding: 32px 24px; }
+}
