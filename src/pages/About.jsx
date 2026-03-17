@@ -123,7 +123,7 @@ export default function About() {
           title: 'Founder & Principal Security Consultant',
           bio: "I founded CyVetting because enterprise-grade security should not require an enterprise budget.",
           creds: ['CISSP', 'CISM', 'CompTIA Security+', 'MS Security Certified'],
-          photo_url: '/images/image1.jpg',
+          photo_url: '/images/image1.jpeg',
           sort_order: 0
         }])
       }
