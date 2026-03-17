@@ -13,27 +13,9 @@ const VALUES = [
 ]
 
 const EDUCATION = [
-  {
-    year: '2026',
-    yearColor: 'lime',
-    degree: 'Post-Graduate Certificate— CyberSecurity',
-    institution: 'Centennial',
-    last: false,
-  },
-  {
-    year: '2024',
-    yearColor: 'blue',
-    degree: 'Post-Graduate Certificate— Project Management',
-    institution: 'Humber College',
-    last: false,
-  },
-  {
-    year: '2021',
-    yearColor: 'lime',
-    degree: 'BSc Computer Science ',
-    institution: 'WLU Waterloo',
-    last: true,
-  },
+  { year: '2023', yearColor: 'lime', degree: 'BSc Computer Science', institution: 'University of Toronto', last: false },
+  { year: '2024', yearColor: 'blue', degree: 'Post-Graduate Diploma — Cybersecurity', institution: 'Conestoga College', last: false },
+  { year: '2025', yearColor: 'lime', degree: 'Post-Graduate Certificate — Project Management', institution: 'Sheridan College', last: true },
 ]
 
 function TeamCard({ member }) {
@@ -71,14 +53,12 @@ function EducationTimeline() {
       <div className={styles.timeline}>
         {EDUCATION.map((item, i) => (
           <div key={i} className={styles.timelineItem}>
-            {/* Year node + rail */}
             <div className={styles.timelineLeft}>
               <div className={`${styles.yearBadge} ${styles[`year_${item.yearColor}`]}`}>
                 {item.year}
               </div>
               {!item.last && <div className={styles.timelineRail} />}
             </div>
-            {/* Content */}
             <div className={`${styles.timelineContent} ${item.last ? styles.timelineLast : ''}`}>
               <div className={styles.eduDegree}>{item.degree}</div>
               <div className={styles.eduInstitution}>{item.institution}</div>
@@ -93,39 +73,28 @@ function EducationTimeline() {
 export default function About() {
   const [team, setTeam] = useState([])
   const [loading, setLoading] = useState(true)
+  const [error, setError] = useState(false)
   const ref = useRef(null)
 
   useEffect(() => {
     async function fetchTeam() {
       if (!supabase) {
-        setTeam([{
-          id: '1',
-          name: 'Ismail Kabar',
-          title: 'Founder & Principal Security Consultant',
-          bio: "I spent [X] years working in enterprise cybersecurity — managing security programs at companies with thousands of employees. I founded CyVetting because enterprise-grade security should not require an enterprise budget. When you work with CyVetting, you work directly with me.",
-          creds: ['CISSP', 'CISM', 'CompTIA Security+', 'MS Security Certified'],
-          photo_url: '/images/image1.jpg',
-          sort_order: 0
-        }])
+        setError(true)
         setLoading(false)
         return
       }
-      const { data } = await supabase
-        .from('team')
-        .select('*')
-        .eq('active', true)
-        .order('sort_order')
-      if (data && data.length > 0) setTeam(data)
-      else {
-        setTeam([{
-          id: '1',
-          name: 'Your Name',
-          title: 'Founder & Principal Security Consultant',
-          bio: "I founded CyVetting because enterprise-grade security should not require an enterprise budget.",
-          creds: ['CISSP', 'CISM', 'CompTIA Security+', 'MS Security Certified'],
-          photo_url: '/images/image1.jpg',
-          sort_order: 0
-        }])
+      try {
+        const { data, error: dbError } = await supabase
+          .from('team')
+          .select('*')
+          .eq('active', true)
+          .order('sort_order')
+
+        if (dbError) throw dbError
+        setTeam(data || [])
+      } catch (err) {
+        console.error('Team fetch error:', err)
+        setError(true)
       }
       setLoading(false)
     }
@@ -162,13 +131,28 @@ export default function About() {
         <div className={styles.sectionTitle}>
           The people behind <em>CyVetting</em>
         </div>
-        {loading ? (
+
+        {loading && (
           <div className={styles.loading}>
             <div className={styles.loadingBar} />
             <div className={styles.loadingBar} style={{width:'60%'}} />
             <div className={styles.loadingBar} style={{width:'80%'}} />
           </div>
-        ) : (
+        )}
+
+        {!loading && error && (
+          <div className={styles.errorMsg}>
+            Team information unavailable. Please check back soon.
+          </div>
+        )}
+
+        {!loading && !error && team.length === 0 && (
+          <div className={styles.errorMsg}>
+            Team information coming soon.
+          </div>
+        )}
+
+        {!loading && !error && team.length > 0 && (
           <div className={`${styles.teamGrid} ${team.length === 1 ? styles.single : ''}`}>
             {team.map(member => (
               <div key={member.id} className="fade-up">
@@ -179,7 +163,7 @@ export default function About() {
         )}
       </section>
 
-      {/* EDUCATION TIMELINE */}
+      {/* EDUCATION */}
       <section className={`${styles.section} ${styles.dark}`}>
         <EducationTimeline />
       </section>
