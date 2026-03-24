@@ -15,7 +15,7 @@ const VALUES = [
 const EDUCATION = [
   { year: '2021', yearColor: 'lime', degree: 'BSc Computer Science', institution: 'WLU Waterloo', last: false },
   { year: '2024', yearColor: 'blue', degree: 'Post-Graduate Certificate — Project Management', institution: 'Humber College', last: false },
-  { year: '2026', yearColor: 'lime', degree: 'Post-Graduate Certificate — Cybersecurityt', institution: 'Centennial College', last: true },
+  { year: '2026', yearColor: 'lime', degree: 'Post-Graduate Certificate — CyberSecurity', institution: 'Centennial College', last: true },
 ]
 
 function TeamCard({ member }) {
