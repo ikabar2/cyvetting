@@ -10,7 +10,7 @@ export default function Footer() {
           <Link to="/" className={styles.logoWrap}>
             <LogoFull height={40} />
           </Link>
-          <p>Enterprise cybersecurity for the modern threat landscape. Protecting businesses in Dallas, Chicago, Denver, and beyond.</p>
+          <p>Enterprise cybersecurity for the modern threat landscape. Protecting businesses in Dallas, Nashville, Phoenix, Buffalo, and beyond.</p>
           {/* SOCIAL LINKS */}
           <div className={styles.social}>
             <a
@@ -71,9 +71,9 @@ export default function Footer() {
           <h4 style={{marginTop:'28px'}}>Contact</h4>
           <ul>
             <li><a href="mailto:admin@cyvetting.com">admin@cyvetting.com</a></li>
-            <li>Dallas: (214) 555-0190</li>
-            <li>Chicago: (312) 555-0190</li>
-            <li>Denver: (720) 555-0190</li>
+            <li>Dallas, TX</li>
+            <li>Nashville, TN</li>
+            <li>Phoenix, AZ  ·  Buffalo, NY</li>
           </ul>
         </div>
       </div>

@@ -35,7 +35,7 @@ export default function Hero() {
         {/* LEFT — content */}
         <div className={styles.content}>
           <div className={`${styles.tag} fade-up`}>
-            // Cybersecurity · Dallas · Chicago · Denver
+            // Dallas · Nashville · Phoenix · Buffalo
           </div>
 
           <h1 className={`${styles.h1} fade-up`}>

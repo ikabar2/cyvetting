@@ -36,7 +36,7 @@ export default function ServiceHIPAA() {
     <>
       <SEO
         title="HIPAA Readiness"
-        description="HIPAA compliance for healthcare SaaS, medical billing, telehealth, and any business handling patient data. Gap assessment, policy library, and M365 configuration. Dallas TX, Chicago IL, and Denver CO."
+        description="HIPAA compliance for healthcare SaaS, medical billing, telehealth, and any business handling patient data. Gap assessment, policy library, and M365 configuration. Dallas TX, Nashville TN, Phoenix AZ, Buffalo NY, Nashville TN, Phoenix AZ, and Buffalo NY."
         path="/services/hipaa"
       />
       <PageHero

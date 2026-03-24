@@ -175,3 +175,28 @@
   .row { grid-template-columns: 1fr; }
   .submit { width: 100%; text-align: center; }
 }
+
+.inputError {
+  border-color: var(--accent3) !important;
+}
+.error {
+  font-family: var(--mono);
+  font-size: 0.68rem;
+  color: var(--accent3);
+  margin-top: 4px;
+  display: block;
+  letter-spacing: 0.04em;
+}
+.req {
+  color: var(--accent3);
+  font-size: 0.8rem;
+}
+.submitError {
+  font-family: 'IBM Plex Sans', sans-serif;
+  font-size: 0.82rem;
+  color: var(--accent3);
+  background: rgba(255,59,110,0.06);
+  border: 1px solid rgba(255,59,110,0.2);
+  padding: 12px 16px;
+  margin-bottom: 12px;
+}

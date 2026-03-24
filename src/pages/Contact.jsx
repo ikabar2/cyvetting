@@ -1,44 +1,42 @@
-import { useEffect } from 'react'
-import PageHero from '../components/PageHero'
-import ContactForm from '../components/ContactForm'
-import styles from './Contact.module.css'
 import SEO from '../components/SEO'
+import ContactForm from '../components/ContactForm'
+import PageHero from '../components/PageHero'
+import styles from './Contact.module.css'
 
 export default function Contact() {
-  useEffect(() => { window.scrollTo(0, 0) }, [])
   return (
     <>
       <SEO
-        title="Contact CyVetting"
-        description="Book a free 30-minute intro call with CyVetting. Get expert cybersecurity advice for your business — no obligation."
-        canonical="/contact"
+        title="Book a Free Call"
+        description="Book a free 30-minute intro call with CyVetting. No sales pitch — just an honest assessment of where you stand. Dallas TX, Nashville TN, Phoenix AZ, Buffalo NY."
+        path="/contact"
       />
       <PageHero
         label="Contact"
         title="Let's talk."
-        accent="No sales pressure."
-        desc="Book a free 30-minute intro call. We'll listen to your situation and tell you honestly whether and how we can help."
+        accent="No pitch. Just clarity."
+        desc="Fill in the form and we will be in touch within one business day. Or email us directly at admin@cyvetting.com"
         breadcrumb={[{ label: 'Contact' }]}
       />
       <section className={styles.section}>
         <div className={styles.grid}>
           <div className={styles.info}>
-            <div className={styles.infoBlock}>
-              <div className={styles.infoLabel}>Dallas Headquarters</div>
-              <p>2100 Ross Avenue, Suite 800<br />Dallas, Texas 75201<br />+1 (214) 555-0190</p>
+            <div className={styles.infoLabel}>// Where we operate</div>
+            <div className={styles.cities}>
+              {['Dallas, TX','Nashville, TN','Phoenix, AZ','Buffalo, NY'].map(c => (
+                <div key={c} className={styles.city}>{c}</div>
+              ))}
+              <div className={styles.city}>Nationwide — Remote</div>
             </div>
-            <div className={styles.infoBlock}>
-              <div className={styles.infoLabel}>Chicago Office</div>
-              <p>444 West Lake Street, Suite 1700<br />Chicago, IL 60606<br />+1 (312) 555-0190</p>
-            </div>
-            <div className={styles.infoBlock}>
-              <div className={styles.infoLabel}>Email</div>
-              <p>admin@cyvetting.com</p>
-            </div>
-            <div className={styles.infoBlock}>
-              <div className={styles.infoLabel}>Response Time</div>
-              <p>Within 24 hours on business days.<br />Urgent matters: call directly.</p>
-            </div>
+            <div className={styles.infoLabel} style={{marginTop:'32px'}}>// Services</div>
+            <ul className={styles.serviceList}>
+              <li>M365 Security &amp; Backup</li>
+              <li>Security Risk Assessment</li>
+              <li>SOC 2 Readiness</li>
+              <li>HIPAA Gap Assessment</li>
+            </ul>
+            <div className={styles.infoLabel} style={{marginTop:'32px'}}>// Email</div>
+            <a href="mailto:admin@cyvetting.com" className={styles.email}>admin@cyvetting.com</a>
           </div>
           <div className={styles.formWrap}>
             <ContactForm />

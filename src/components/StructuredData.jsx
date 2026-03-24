@@ -11,7 +11,7 @@ export default function StructuredData() {
         logo: 'https://cyvetting.com/logo.svg',
         image: 'https://cyvetting.com/og-image.png',
         email: 'admin@cyvetting.com',
-        areaServed: ['Dallas, TX', 'Chicago, IL', 'Denver, CO', 'United States'],
+        areaServed: ['Dallas, TX', 'Nashville, TN', 'Phoenix, AZ', 'Buffalo, NY', 'United States'],
         serviceType: ['SOC 2 Readiness', 'M365 Security', 'Vendor Risk Management', 'Cyber Insurance'],
         priceRange: '$$',
         knowsAbout: ['SOC 2', 'Microsoft 365', 'Cybersecurity', 'Vendor Risk', 'Cyber Insurance', 'Zero Trust', 'NIST'],
