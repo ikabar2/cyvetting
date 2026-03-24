@@ -35,7 +35,7 @@ export default function ServiceAssessment() {
     <>
       <SEO
         title="Cybersecurity Risk Assessment"
-        description="NIST-based cybersecurity risk assessment for small businesses. Plain-English gap report and 90-day remediation roadmap. Dallas TX, Nashville TN, Buffalo NY."
+        description="NIST-based cybersecurity risk assessment for small businesses. Plain-English gap report and 90-day remediation roadmap. Dallas TX, Nashville TN, Phoenix AZ, Buffalo NY, Nashville TN, Buffalo NY."
         path="/services/assessment"
       />
       <PageHero
