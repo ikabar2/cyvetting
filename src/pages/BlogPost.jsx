@@ -75,6 +75,11 @@ export default function BlogPost() {
           <span className={styles.readTime}>{post.read_time}</span>
         </div>
 
+        {post.image_url && (
+          <div className={styles.heroImage}>
+            <img src={post.image_url} alt={post.title} className={styles.heroImg} />
+          </div>
+        )}
         <div className={styles.content}>
           {post.content.split('\n\n').map((para, i) => (
             para.trim() && <p key={i}>{para.trim()}</p>

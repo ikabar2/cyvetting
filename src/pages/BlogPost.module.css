@@ -156,3 +156,18 @@
   .article { padding: 48px 24px 80px; }
   .notFound { padding: 100px 24px; }
 }
+
+/* HERO IMAGE */
+.heroImage {
+  margin-bottom: 40px;
+  border: 1px solid var(--border);
+  overflow: hidden;
+}
+.heroImg {
+  width: 100%;
+  height: auto;
+  display: block;
+  max-height: 420px;
+  object-fit: cover;
+  object-position: center;
+}
