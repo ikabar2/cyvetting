@@ -12,7 +12,8 @@ import ServiceM365   from './pages/ServiceM365'
 import ServiceVendor from './pages/ServiceVendor'
 import ServiceHIPAA  from './pages/ServiceHIPAA'
 import ServicePCI      from './pages/ServicePCI'
-import ServiceGDPR     from './pages/ServiceGDPR'
+import ServiceGDPR       from './pages/ServiceGDPR'
+import ServiceAssessment from './pages/ServiceAssessment'
 import ServiceISO27001 from './pages/ServiceISO27001'
 import About         from './pages/About'
 import Results       from './pages/Results'
@@ -42,6 +43,7 @@ function AppRoutes() {
         <Route path="/services/hipaa"    element={<ServiceHIPAA />} />
         <Route path="/services/pci"      element={<ServicePCI />} />
         <Route path="/services/gdpr"     element={<ServiceGDPR />} />
+        <Route path="/services/assessment" element={<ServiceAssessment />} />
         <Route path="/services/iso27001" element={<ServiceISO27001 />} />
         <Route path="/about"             element={<About />} />
         <Route path="/results"           element={<Results />} />

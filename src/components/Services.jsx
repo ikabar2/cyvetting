@@ -3,53 +3,36 @@ import styles from './Services.module.css'
 
 const SERVICES = [
   {
-    icon: '🛡️',
-    accent: 'lime',
-    title: 'SOC 2 Readiness',
-    desc: 'Gap assessment to audit-ready in 90 days. We map your controls, close the gaps, and deliver audit-ready documentation.',
-    link: '/services/soc2',
-  },
-  {
     icon: '☁️',
     accent: 'blue',
     title: 'M365 Security & Backup',
-    desc: 'Full hardening, MFA enforcement, Microsoft Defender configuration, and automated backup.',
+    desc: 'Full hardening, MFA enforcement, Microsoft Defender configuration, and automated backup. Most clients see results in under two weeks.',
     link: '/services/m365',
+    tag: 'Core service',
   },
   {
     icon: '🔍',
     accent: 'lime',
-    title: 'Vendor Risk & Insurance',
-    desc: 'Third-party risk programs and cyber insurance readiness documentation at better premiums.',
-    link: '/services/vendor',
+    title: 'Security Risk Assessment',
+    desc: 'Plain-English gap report and 90-day remediation roadmap — mapped against the NIST Cybersecurity Framework. Delivered in one week.',
+    link: '/services/assessment',
+    tag: 'Entry point',
+  },
+  {
+    icon: '🛡️',
+    accent: 'blue',
+    title: 'SOC 2 Readiness',
+    desc: 'Gap assessment to audit-ready in 90 days. We prepare your controls, policies, and evidence — you engage the auditor directly.',
+    link: '/services/soc2',
+    tag: 'SaaS & tech',
   },
   {
     icon: '🏥',
-    accent: 'blue',
-    title: 'HIPAA Readiness',
-    desc: 'Risk assessment, policy library, BAA audit, and M365 configuration for any business handling patient data.',
+    accent: 'lime',
+    title: 'HIPAA Gap Assessment',
+    desc: 'Identify compliance gaps, document controls, and build a defensible HIPAA program for your healthcare or health tech business.',
     link: '/services/hipaa',
-  },
-  {
-    icon: '💳',
-    accent: 'lime',
-    title: 'PCI DSS Readiness',
-    desc: 'Scope your cardholder environment, close v4.0 gaps, and complete your SAQ before your bank asks.',
-    link: '/services/pci',
-  },
-  {
-    icon: '🇪🇺',
-    accent: 'blue',
-    title: 'GDPR Compliance',
-    desc: 'Data protection compliance for businesses with EU and UK customers. Privacy docs, DPAs, and breach response.',
-    link: '/services/gdpr',
-  },
-  {
-    icon: '🌐',
-    accent: 'lime',
-    title: 'ISO 27001 Readiness',
-    desc: 'The international security standard — required by European enterprise clients. 70% overlap with SOC 2.',
-    link: '/services/iso27001',
+    tag: 'Healthcare',
   },
 ]
 
@@ -58,14 +41,17 @@ export default function Services() {
     <section className={styles.section}>
       <div className={styles.label}>What we do</div>
       <h2 className={styles.heading}>
-        Seven services.<br />
+        Four focused services.<br />
         <em>One trusted partner.</em>
       </h2>
-      <div className={styles.grid}>
+      <div className={`${styles.grid} ${styles.grid4}`}>
         {SERVICES.map(s => (
           <div key={s.title} className={styles.card}>
             <div className={`${styles.cardBar} ${styles[s.accent]}`} />
-            <span className={styles.icon}>{s.icon}</span>
+            <div className={styles.cardTop}>
+              <span className={styles.icon}>{s.icon}</span>
+              <span className={`${styles.cardTag} ${styles[s.accent]}`}>{s.tag}</span>
+            </div>
             <div className={styles.cardTitle}>{s.title}</div>
             <p className={styles.cardDesc}>{s.desc}</p>
             <Link to={s.link} className={styles.cardLink}>Learn more →</Link>

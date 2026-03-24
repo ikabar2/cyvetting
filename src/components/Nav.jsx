@@ -13,13 +13,10 @@ export default function Nav() {
           <span className={styles.dropdown}>
             Services
             <div className={styles.dropMenu}>
+              <Link to="/services/m365">M365 Security &amp; Backup</Link>
+              <Link to="/services/assessment">Security Risk Assessment</Link>
               <Link to="/services/soc2">SOC 2 Readiness</Link>
-              <Link to="/services/m365">M365 Security & Backup</Link>
-              <Link to="/services/vendor">Vendor Security &amp; Cyber Insurance</Link>
-              <Link to="/services/hipaa">HIPAA Readiness</Link>
-              <Link to="/services/pci">PCI DSS Readiness</Link>
-              <Link to="/services/gdpr">GDPR Compliance</Link>
-              <Link to="/services/iso27001">ISO 27001 Readiness</Link>
+              <Link to="/services/hipaa">HIPAA Gap Assessment</Link>
             </div>
           </span>
         </li>

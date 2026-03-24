@@ -91,3 +91,38 @@
   .section { padding: 60px 24px; }
   .grid { grid-template-columns: 1fr; }
 }
+
+/* 4-service grid */
+.grid4 {
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.cardTop {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 4px;
+}
+
+.cardTag {
+  font-family: var(--mono);
+  font-size: 0.58rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  padding: 3px 10px;
+  border: 1px solid;
+}
+.cardTag.lime {
+  color: var(--accent2);
+  border-color: rgba(170,255,0,0.3);
+  background: rgba(170,255,0,0.04);
+}
+.cardTag.blue {
+  color: var(--accent);
+  border-color: rgba(0,180,255,0.3);
+  background: rgba(0,180,255,0.04);
+}
+
+@media (max-width: 700px) {
+  .grid4 { grid-template-columns: 1fr; }
+}

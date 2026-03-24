@@ -1,13 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url><loc>https://cyvetting.com/</loc><changefreq>weekly</changefreq><priority>1.0</priority></url>
-  <url><loc>https://cyvetting.com/services/soc2</loc><changefreq>monthly</changefreq><priority>0.9</priority></url>
   <url><loc>https://cyvetting.com/services/m365</loc><changefreq>monthly</changefreq><priority>0.9</priority></url>
-  <url><loc>https://cyvetting.com/services/vendor</loc><changefreq>monthly</changefreq><priority>0.9</priority></url>
+  <url><loc>https://cyvetting.com/services/assessment</loc><changefreq>monthly</changefreq><priority>0.9</priority></url>
+  <url><loc>https://cyvetting.com/services/soc2</loc><changefreq>monthly</changefreq><priority>0.9</priority></url>
   <url><loc>https://cyvetting.com/services/hipaa</loc><changefreq>monthly</changefreq><priority>0.9</priority></url>
-  <url><loc>https://cyvetting.com/services/pci</loc><changefreq>monthly</changefreq><priority>0.9</priority></url>
-  <url><loc>https://cyvetting.com/services/gdpr</loc><changefreq>monthly</changefreq><priority>0.9</priority></url>
-  <url><loc>https://cyvetting.com/services/iso27001</loc><changefreq>monthly</changefreq><priority>0.9</priority></url>
   <url><loc>https://cyvetting.com/about</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
   <url><loc>https://cyvetting.com/results</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
   <url><loc>https://cyvetting.com/blog</loc><changefreq>weekly</changefreq><priority>0.7</priority></url>

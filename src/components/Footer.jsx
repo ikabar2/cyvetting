@@ -33,13 +33,10 @@ export default function Footer() {
         <div className={styles.col}>
           <h4>Services</h4>
           <ul>
+            <li><Link to="/services/m365">M365 Security &amp; Backup</Link></li>
+            <li><Link to="/services/assessment">Security Risk Assessment</Link></li>
             <li><Link to="/services/soc2">SOC 2 Readiness</Link></li>
-            <li><Link to="/services/hipaa">HIPAA Readiness</Link></li>
-            <li><Link to="/services/pci">PCI DSS Readiness</Link></li>
-            <li><Link to="/services/m365">M365 Security & Backup</Link></li>
-            <li><Link to="/services/vendor">Vendor Risk & Insurance</Link></li>
-            <li><Link to="/services/gdpr">GDPR Compliance</Link></li>
-            <li><Link to="/services/iso27001">ISO 27001 Readiness</Link></li>
+            <li><Link to="/services/hipaa">HIPAA Gap Assessment</Link></li>
           </ul>
         </div>
 
