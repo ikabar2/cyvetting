@@ -200,3 +200,67 @@
   padding: 12px 16px;
   margin-bottom: 12px;
 }
+
+/* ── Submit button — redesigned, prominent ── */
+.btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  width: 100%;
+  padding: 18px 32px;
+  margin-top: 8px;
+  background: var(--accent2, #aaff00);
+  color: #050a0f;
+  font-family: 'IBM Plex Sans', sans-serif;
+  font-size: 1rem;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  border: none;
+  border-radius: 0;
+  cursor: pointer;
+  transition: background 0.18s, transform 0.12s;
+  position: relative;
+  overflow: hidden;
+}
+
+.btn::after {
+  content: '';
+  position: absolute;
+  left: 0; top: 0;
+  width: 4px;
+  height: 100%;
+  background: rgba(0,0,0,0.18);
+}
+
+.btn:hover:not(:disabled) {
+  background: #c8ff33;
+  transform: translateY(-1px);
+}
+
+.btn:active:not(:disabled) {
+  transform: translateY(0);
+}
+
+.btn:disabled {
+  background: #6a9900;
+  color: #2a3d00;
+  cursor: not-allowed;
+}
+
+.btnArrow {
+  font-size: 1.2rem;
+  transition: transform 0.18s;
+}
+
+.btn:hover .btnArrow {
+  transform: translateX(4px);
+}
+
+.note {
+  font-size: 0.75rem;
+  color: var(--muted, #888);
+  margin-top: 12px;
+  text-align: center;
+  letter-spacing: 0.02em;
+}

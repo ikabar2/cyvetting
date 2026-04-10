@@ -15,8 +15,8 @@ export default function Nav() {
             <div className={styles.dropMenu}>
               <Link to="/services/m365">M365 Security &amp; Backup</Link>
               <Link to="/services/assessment">Security Risk Assessment</Link>
-              <Link to="/services/soc2">SOC 2 Readiness</Link>
-              <Link to="/services/hipaa">HIPAA Gap Assessment</Link>
+              <Link to="/services/vciso">Fractional vCISO</Link>
+              <Link to="/services/iam">IAM Advisory &amp; Audit</Link>
             </div>
           </span>
         </li>

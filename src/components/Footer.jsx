@@ -35,8 +35,8 @@ export default function Footer() {
           <ul>
             <li><Link to="/services/m365">M365 Security &amp; Backup</Link></li>
             <li><Link to="/services/assessment">Security Risk Assessment</Link></li>
-            <li><Link to="/services/soc2">SOC 2 Readiness</Link></li>
-            <li><Link to="/services/hipaa">HIPAA Gap Assessment</Link></li>
+            <li><Link to="/services/vciso">Fractional vCISO</Link></li>
+            <li><Link to="/services/iam">IAM Advisory &amp; Audit</Link></li>
           </ul>
         </div>
 

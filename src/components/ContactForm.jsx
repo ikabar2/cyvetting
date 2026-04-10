@@ -5,8 +5,8 @@ import styles from './ContactForm.module.css'
 const SERVICES = [
   'M365 Security & Backup',
   'Security Risk Assessment',
-  'SOC 2 Readiness',
-  'HIPAA Gap Assessment',
+  'Fractional vCISO',
+  'IAM Advisory & Audit',
   'General Inquiry',
 ]
 
@@ -171,7 +171,14 @@ export default function ContactForm() {
       )}
 
       <button type="submit" className={styles.btn} disabled={status === 'loading'}>
-        {status === 'loading' ? 'Sending...' : 'Send Message →'}
+        {status === 'loading' ? (
+          <>Sending…</>
+        ) : (
+          <>
+            Send Message
+            <span className={styles.btnArrow} aria-hidden="true">→</span>
+          </>
+        )}
       </button>
 
       <p className={styles.note}>
