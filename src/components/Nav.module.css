@@ -49,9 +49,9 @@
   position: absolute;
   top: calc(100% + 16px);
   left: 0;
-  background: #12091c;
+  background: #091729;
   border: 1px solid #2a1640;
-  border-top: 3px solid var(--accent2);
+  border-top: 3px solid #f5c518;
   min-width: 260px;
   z-index: 200;
   flex-direction: column;
@@ -71,7 +71,7 @@
 .dropMenu a:last-child { border-bottom: none; }
 .dropMenu a:hover {
   color: var(--accent2);
-  background: rgba(170,255,0,0.06);
+  background: rgba(245,197,24,0.06);
   padding-left: 28px;
 }
 
@@ -89,7 +89,7 @@
   flex-shrink: 0;
   white-space: nowrap;
 }
-.cta:hover { background: rgba(170,255,0,0.08); }
+.cta:hover { background: rgba(245,197,24,0.08); }
 
 @media (max-width: 900px) {
   .nav { padding: 0 24px; }

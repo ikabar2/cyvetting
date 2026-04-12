@@ -54,8 +54,8 @@
 }
 .lime::before { background: var(--accent2); }
 .blue::before { background: var(--accent); }
-.badge:hover.lime { border-color: rgba(170,255,0,0.35); }
-.badge:hover.blue { border-color: rgba(0,180,255,0.35); }
+.badge:hover.lime { border-color: rgba(245,197,24,0.35); }
+.badge:hover.blue { border-color: rgba(74,144,217,0.35); }
 
 .badgeTitle {
   font-family: var(--mono);
@@ -113,7 +113,7 @@
 }
 .fwTag:hover {
   color: var(--accent2);
-  border-color: rgba(170,255,0,0.3);
+  border-color: rgba(245,197,24,0.3);
 }
 
 @media (max-width: 768px) {

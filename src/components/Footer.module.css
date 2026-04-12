@@ -113,7 +113,7 @@
 }
 .socialLink:hover {
   color: var(--accent2);
-  border-color: rgba(170,255,0,0.3);
+  border-color: rgba(245,197,24,0.3);
 }
 
 .bottomRight {

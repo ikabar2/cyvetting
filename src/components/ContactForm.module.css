@@ -50,7 +50,7 @@
 .select:focus,
 .textarea:focus {
   border-color: var(--accent);
-  box-shadow: 0 0 0 3px rgba(170,255,0,0.06);
+  box-shadow: 0 0 0 3px rgba(245,197,24,0.06);
 }
 
 .select {
@@ -121,8 +121,8 @@
   justify-content: center;
   text-align: center;
   padding: 60px 40px;
-  border: 1px solid rgba(170,255,0,0.2);
-  background: rgba(170,255,0,0.03);
+  border: 1px solid rgba(245,197,24,0.2);
+  background: rgba(245,197,24,0.03);
   gap: 16px;
 }
 
@@ -161,14 +161,14 @@
   text-transform: uppercase;
   color: var(--accent);
   background: transparent;
-  border: 1px solid rgba(170,255,0,0.2);
+  border: 1px solid rgba(245,197,24,0.2);
   padding: 10px 24px;
   cursor: pointer;
   transition: all 0.25s;
 }
 .resetBtn:hover {
   border-color: var(--accent);
-  background: rgba(170,255,0,0.05);
+  background: rgba(245,197,24,0.05);
 }
 
 @media (max-width: 600px) {
@@ -210,8 +210,8 @@
   width: 100%;
   padding: 18px 32px;
   margin-top: 8px;
-  background: var(--accent2, #aaff00);
-  color: #050a0f;
+  background: var(--accent2, #f5c518);
+  color: #0c1a2e;
   font-family: 'IBM Plex Sans', sans-serif;
   font-size: 1rem;
   font-weight: 600;
@@ -234,7 +234,7 @@
 }
 
 .btn:hover:not(:disabled) {
-  background: #c8ff33;
+  background: #ffd740;
   transform: translateY(-1px);
 }
 
@@ -243,8 +243,8 @@
 }
 
 .btn:disabled {
-  background: #6a9900;
-  color: #2a3d00;
+  background: #b8960a;
+  color: #0c1a2e;
   cursor: not-allowed;
 }
 

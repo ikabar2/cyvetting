@@ -21,7 +21,7 @@
   position: absolute;
   top: 20%; left: 30%;
   width: 600px; height: 600px;
-  background: radial-gradient(circle, rgba(0,180,255,0.04) 0%, transparent 70%);
+  background: radial-gradient(circle, rgba(74,144,217,0.04) 0%, transparent 70%);
   pointer-events: none;
 }
 
@@ -83,13 +83,14 @@
   font-weight: 700;
   letter-spacing: 0.04em;
   padding: 16px 36px;
-  background: var(--accent2);
-  color: var(--bg);
+  background: #f5c518;
+  color: #0c1a2e;
+  font-weight: 700;
   text-decoration: none;
   clip-path: polygon(10px 0%, 100% 0%, calc(100% - 10px) 100%, 0% 100%);
   transition: all 0.25s;
 }
-.btnPrimary:hover { background: #ffffff; transform: translateY(-2px); }
+.btnPrimary:hover { background: #ffd740; transform: translateY(-2px); }
 
 .btnGhost {
   font-family: 'IBM Plex Sans', sans-serif;
@@ -103,7 +104,7 @@
   border: 1px solid var(--accent);
   transition: all 0.25s;
 }
-.btnGhost:hover { background: rgba(0,180,255,0.06); transform: translateY(-2px); }
+.btnGhost:hover { background: rgba(74,144,217,0.06); transform: translateY(-2px); }
 
 /* STATS */
 .stats {

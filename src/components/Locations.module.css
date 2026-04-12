@@ -42,13 +42,13 @@
   overflow: hidden;
   transition: border-color 0.3s;
 }
-.card:hover { border-color: rgba(170,255,0,0.35); }
+.card:hover { border-color: rgba(245,197,24,0.35); }
 .card::after {
   content: '';
   position: absolute;
   bottom: 0; right: 0;
   width: 80px; height: 80px;
-  background: radial-gradient(circle at bottom right, rgba(170,255,0,0.06), transparent);
+  background: radial-gradient(circle at bottom right, rgba(245,197,24,0.06), transparent);
 }
 
 .remote { border-style: dashed; }
