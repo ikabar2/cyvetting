@@ -12,7 +12,7 @@
 .label {
   font-family: var(--mono);
   font-size: 0.7rem;
-  color: var(--accent);
+  color: #f5c518;
   letter-spacing: 0.25em;
   text-transform: uppercase;
   margin-bottom: 16px;
@@ -145,7 +145,7 @@
 .cred {
   font-family: var(--mono);
   font-size: 0.6rem;
-  color: var(--accent);
+  color: #f5c518;
   border: 1px solid rgba(245,197,24,0.2);
   padding: 4px 10px;
   letter-spacing: 0.08em;
@@ -312,7 +312,7 @@
 .eduInstitution {
   font-family: var(--mono);
   font-size: 0.65rem;
-  color: var(--accent);
+  color: #f5c518;
   letter-spacing: 0.1em;
   text-transform: uppercase;
 }

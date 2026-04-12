@@ -54,7 +54,7 @@
   content: '▸';
   position: absolute;
   left: 0;
-  color: var(--accent);
+  color: #f5c518;
   font-size: 0.65rem;
   top: 4px;
 }

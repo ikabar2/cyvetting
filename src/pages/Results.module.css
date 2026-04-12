@@ -37,7 +37,7 @@
 .sectionLabel {
   font-family: var(--mono);
   font-size: 0.7rem;
-  color: var(--accent);
+  color: #f5c518;
   letter-spacing: 0.25em;
   text-transform: uppercase;
   margin-bottom: 48px;
@@ -87,8 +87,8 @@
   border: 1px solid;
   width: fit-content;
 }
-.tag.lime { color: var(--accent2); border-color: rgba(245,197,24,0.3); background: rgba(74,144,217,0.04); }
-.tag.blue { color: var(--accent);  border-color: rgba(74,144,217,0.3); background: rgba(74,144,217,0.04); }
+.tag.lime { color: var(--accent2); border-color: rgba(245,197,24,0.3); background: rgba(245,197,24,0.04); }
+.tag.blue { color: #f5c518;  border-color: rgba(245,197,24,0.3); background: rgba(245,197,24,0.04); }
 
 .company {
   font-family: 'IBM Plex Sans', sans-serif;
@@ -146,7 +146,7 @@
 }
 .metricVal span {
   font-size: 0.8rem;
-  color: var(--accent);
+  color: #f5c518;
   font-weight: 400;
   margin-left: 2px;
 }
@@ -160,7 +160,7 @@
 .caseLink {
   font-family: 'IBM Plex Sans', sans-serif;
   font-size: 0.8rem;
-  color: var(--accent);
+  color: #f5c518;
   text-decoration: none;
   letter-spacing: 0.02em;
   transition: color 0.2s;
