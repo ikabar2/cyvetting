@@ -5,7 +5,7 @@ import SEO from '../components/SEO'
 
 export default function PrivacyPolicy() {
   useEffect(() => { window.scrollTo(0, 0) }, [])
-  const updated = 'March 2025'
+  const updated = 'April 2026'
   return (
     <>
       <SEO
@@ -26,8 +26,8 @@ export default function PrivacyPolicy() {
 
           <div className={styles.block}>
             <h2>1. Who We Are</h2>
-            <p>CyVetting Security Inc. ("CyVetting", "we", "us", or "our") is a cybersecurity consulting firm. Our registered office is located at [Your Registered Address]. We operate this website at cyvetting.com (the "Site").</p>
-            <p>For questions about this policy, contact us at: <strong>admin@cyvetting.com</strong></p>
+            <p>CyVetting Security Inc. ("CyVetting", "we", "us", or "our") is a cybersecurity consulting firm serving clients in Buffalo, NY, the Niagara region, and remotely across North America. We operate this website at cyvetting.com (the "Site").</p>
+            <p>For questions about this policy, contact us at: <strong>contact@cyvetting.com</strong></p>
           </div>
 
           <div className={styles.block}>
@@ -68,12 +68,12 @@ export default function PrivacyPolicy() {
               <li>Withdraw consent to our use of your information (subject to legal and contractual restrictions)</li>
               <li>File a complaint with the Office of the Privacy Commissioner of Canada</li>
             </ul>
-            <p>To exercise these rights, email us at <strong>admin@cyvetting.com</strong>. We will respond within 30 days.</p>
+            <p>To exercise these rights, email us at <strong>contact@cyvetting.com</strong>. We will respond within 30 days.</p>
           </div>
 
           <div className={styles.block}>
             <h2>6. Your Rights (US Residents)</h2>
-            <p>If you are a resident of California or another state with applicable privacy laws, you may have additional rights regarding your personal information. Contact us at <strong>admin@cyvetting.com</strong> to make a request.</p>
+            <p>If you are a resident of California, Texas, or another state with applicable privacy laws, you may have additional rights regarding your personal information. Contact us at <strong>contact@cyvetting.com</strong> to make a request.</p>
           </div>
 
           <div className={styles.block}>
@@ -100,8 +100,8 @@ export default function PrivacyPolicy() {
             <h2>11. Contact</h2>
             <p>For any privacy-related questions or requests:</p>
             <p><strong>CyVetting Security Inc.</strong><br />
-            Email: admin@cyvetting.com<br />
-            [Your Registered Address]</p>
+            Email: contact@cyvetting.com<br />
+            Buffalo, NY · Niagara Region, ON · Remote</p>
           </div>
 
         </div>
