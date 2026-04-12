@@ -27,35 +27,6 @@ const LOCATIONS = [
     badge: 'On Request',
     hq: false,
   },
-],
-    badge: 'Headquarters',
-    hq: true,
-  },
-  {
-    city: 'Nashville, TN',
-    addr: ['Healthcare Capital', 'Nashville, Tennessee', 'HIPAA · SOC 2'],
-    badge: 'Healthcare Focus',
-    hq: false,
-  },
-  {
-    city: 'Phoenix, AZ',
-    addr: ['Southwest Market', 'Phoenix, Arizona', 'M365 · Risk Assessment'],
-    badge: 'Southwest',
-    hq: false,
-  },
-  {
-    city: 'Buffalo, NY',
-    addr: ['Ontario Border Market', 'Buffalo, New York', 'IAM · HIPAA · SOC 2'],
-    badge: 'Border Market',
-    hq: false,
-  },
-  {
-    city: 'Remote',
-    addr: ['24/7 Security Operations', 'Monitoring clients coast to coast', 'Nationwide response'],
-    badge: 'Always On',
-    hq: false,
-    remote: true,
-  },
 ]
 
 export default function Locations() {
