@@ -10,7 +10,7 @@ export default function StructuredData() {
         url: 'https://cyvetting.com',
         logo: 'https://cyvetting.com/logo.svg',
         image: 'https://cyvetting.com/og-image.png',
-        email: 'admin@cyvetting.com',
+        email: 'contact@cyvetting.com',
         areaServed: ['Dallas, TX', 'Nashville, TN', 'Phoenix, AZ', 'Buffalo, NY', 'United States'],
         serviceType: ['SOC 2 Readiness', 'M365 Security', 'Vendor Risk Management', 'Cyber Insurance'],
         priceRange: '$$',

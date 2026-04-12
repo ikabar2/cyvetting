@@ -8,14 +8,14 @@ export default function Contact() {
     <>
       <SEO
         title="Book a Free Call"
-        description="Book a free 30-minute intro call with CyVetting. No sales pitch — just an honest assessment of where you stand. Dallas TX, Nashville TN, Phoenix AZ, Buffalo NY."
+        description="Book a free 30-minute intro call with CyVetting. No sales pitch — just an honest assessment of where you stand. Buffalo NY, Niagara region. Remote nationwide. Relocation available."
         path="/contact"
       />
       <PageHero
         label="Contact"
         title="Let's talk."
         accent="No pitch. Just clarity."
-        desc="Fill in the form and we will be in touch within one business day. Or email us directly at admin@cyvetting.com"
+        desc="Fill in the form and we will be in touch within one business day. Or email us directly at contact@cyvetting.com"
         breadcrumb={[{ label: 'Contact' }]}
       />
       <section className={styles.section}>
@@ -36,7 +36,7 @@ export default function Contact() {
               <li>HIPAA Gap Assessment</li>
             </ul>
             <div className={styles.infoLabel} style={{marginTop:'32px'}}>// Email</div>
-            <a href="mailto:admin@cyvetting.com" className={styles.email}>admin@cyvetting.com</a>
+            <a href="mailto:contact@cyvetting.com" className={styles.email}>contact@cyvetting.com</a>
           </div>
           <div className={styles.formWrap}>
             <ContactForm />

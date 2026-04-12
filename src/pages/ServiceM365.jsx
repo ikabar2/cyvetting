@@ -17,7 +17,7 @@ const FAQS = [
   { q: "Does Microsoft back up my data?", a: "No — this is one of the most dangerous misconceptions in IT. Microsoft provides infrastructure redundancy but not backup. If you accidentally delete files or get hit by ransomware, Microsoft cannot restore your data. You need a third-party backup." },
   { q: "How long does the M365 hardening take?", a: "Initial hardening is typically completed in 1–2 weeks. We work around your business hours to minimize disruption and communicate changes to your team in advance." },
   { q: "Will this affect how my team uses Office?", a: "Minimal impact for normal usage. MFA adds a 10-second step at login. The security policies work in the background. We test all changes in a staging environment before rollout." },
-  { q: "What is the ongoing retainer?", a: "Our M365 monitoring retainer starts at $500/month. It includes monthly Secure Score reviews, policy updates, backup monitoring, and incident response for any alerts triggered." },
+  { q: "What is the ongoing retainer?", a: "Our M365 monitoring retainer starts at contact usnth. It includes monthly Secure Score reviews, policy updates, backup monitoring, and incident response for any alerts triggered." },
 ]
 
 export default function ServiceM365() {
@@ -43,7 +43,7 @@ export default function ServiceM365() {
             <div className={styles.label}>The Problem</div>
             <h2 className={styles.h2}>M365 default settings leave you exposed.</h2>
             <p>Microsoft 365 ships with security features turned off or set to the lowest common denominator. Legacy authentication protocols are enabled. MFA is optional. Backup doesn&apos;t exist.</p>
-            <p>The result: 85% of cyberattacks against small businesses now target Microsoft 365 credentials. Business email compromise (BEC) alone costs US businesses over $2.7 billion a year.</p>
+            <p>The result: 85% of cyberattacks against small businesses now target Microsoft 365 credentials. Business email compromise (BEC) alone costs US businesses over contact us.7 billion a year.</p>
             <p>We fix all of it — in two weeks or less.</p>
             <Link to="/contact" className={styles.btnPrimary}>Secure My M365 Environment</Link>
           </div>
@@ -53,7 +53,7 @@ export default function ServiceM365() {
               <div className={styles.statDesc}>of SMB cyberattacks target M365 credentials</div>
             </div>
             <div className={styles.statItem}>
-              <div className={styles.statVal}>$2.7<span>B</span></div>
+              <div className={styles.statVal}>contact us.7<span>B</span></div>
               <div className={styles.statDesc}>lost annually to business email compromise in the US</div>
             </div>
             <div className={styles.statItem}>

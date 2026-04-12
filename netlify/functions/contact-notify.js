@@ -15,7 +15,7 @@ export default async (req) => {
       },
       body: JSON.stringify({
         from: 'CyVetting Contact Form <notifications@cyvetting.com>',
-        to: ['admin@cyvetting.com'],
+        to: ['contact@cyvetting.com'],
         reply_to: email,
         subject: `New lead: ${name} — ${service || 'General inquiry'}`,
         html: `

@@ -3,8 +3,31 @@ import styles from './Locations.module.css'
 
 const LOCATIONS = [
   {
-    city: 'Dallas, TX',
-    addr: ['Headquarters', 'Dallas, Texas', 'admin@cyvetting.com'],
+    city: 'Buffalo, NY',
+    addr: ['Western New York', 'Buffalo, New York', 'contact@cyvetting.com'],
+    badge: 'Primary Market',
+    hq: true,
+  },
+  {
+    city: 'Niagara Region, ON',
+    addr: ['Ontario Border Market', 'Niagara Region, Ontario', 'IAM · M365 · vCISO'],
+    badge: 'Cross-Border',
+    hq: false,
+  },
+  {
+    city: 'Remote',
+    addr: ['24/7 Security Operations', 'Serving clients coast to coast', 'Nationwide coverage'],
+    badge: 'Always On',
+    hq: false,
+    remote: true,
+  },
+  {
+    city: 'Relocation',
+    addr: ['Available on request', 'Dallas · Nashville · Phoenix', 'Open to US markets'],
+    badge: 'On Request',
+    hq: false,
+  },
+],
     badge: 'Headquarters',
     hq: true,
   },
@@ -52,7 +75,7 @@ export default function Locations() {
   return (
     <section className={styles.section} id="locations" ref={ref}>
       <div className={styles.label}>Where We Operate</div>
-      <div className={styles.title}>Four cities.<br /><em>National coverage.</em></div>
+      <div className={styles.title}>Buffalo & Niagara.<br /><em>Remote nationwide.</em></div>
       <div className={styles.grid}>
         {LOCATIONS.map((loc, i) => (
           <div key={i} className={`${styles.card} ${loc.remote ? styles.remote : ''} fade-up`}>

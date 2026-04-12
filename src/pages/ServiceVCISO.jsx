@@ -13,7 +13,7 @@ const DELIVERABLES = [
 ]
 
 const FAQS = [
-  { q: 'What is a fractional vCISO?', a: 'A Virtual Chief Information Security Officer (vCISO) is an outsourced security executive who provides the strategic security leadership your business needs — without the $250,000–$400,000 cost of a full-time CISO hire. You get executive-level cybersecurity guidance on a monthly retainer, typically 8–20 hours per month depending on your needs.' },
+  { q: 'What is a fractional vCISO?', a: 'A Virtual Chief Information Security Officer (vCISO) is an outsourced security executive who provides the strategic security leadership your business needs — without the contact us cost of a full-time CISO hire. You get executive-level cybersecurity guidance on a monthly retainer, typically 8–20 hours per month depending on your needs.' },
   { q: 'Who needs a vCISO?', a: 'Any business that handles sensitive data, faces regulatory requirements, or has customers asking for security documentation — but cannot justify a full-time CISO. SaaS companies preparing for SOC 2, healthcare businesses managing HIPAA, financial services firms under FFIEC, and any SMB that has been asked to complete a security questionnaire by a customer.' },
   { q: 'How is this different from a consultant?', a: 'A consultant delivers a project and leaves. A fractional vCISO is an ongoing executive relationship — we attend your leadership meetings, answer security questions in real time, review contracts before you sign them, and own your security program continuity month over month. You have a direct line to senior security expertise, not a ticketing queue.' },
   { q: 'What does the monthly retainer include?', a: 'Monthly retainers include a standing call with leadership, risk register maintenance, policy library updates, vendor questionnaire reviews, incident response oversight, and availability for ad hoc questions. Scope is defined at engagement start and reviewed quarterly.' },
@@ -25,14 +25,14 @@ export default function ServiceVCISO() {
     <>
       <SEO
         title="Fractional vCISO Services"
-        description="On-demand security leadership for SMBs. Strategy, governance, policy, and board reporting — without the $300K full-time CISO cost. Dallas TX, Nashville TN, Phoenix AZ, Buffalo NY."
+        description="On-demand security leadership for SMBs. Strategy, governance, policy, and board reporting — without the contact usK full-time CISO cost. Dallas TX, Nashville TN, Phoenix AZ, Buffalo NY."
         path="/services/vciso"
       />
       <PageHero
         label="Service"
         title="Fractional vCISO —"
         accent="Security leadership on demand."
-        desc="Executive-level cybersecurity strategy, governance, and risk management — without the $300,000 full-time hire. Available as a monthly retainer from $3,000."
+        desc="Executive-level cybersecurity strategy, governance, and risk management — without the contact us full-time hire. Available as a monthly retainer from contact us."
         breadcrumb={[{ label: 'Services', href: '/#services' }, { label: 'Fractional vCISO' }]}
       />
 
@@ -52,8 +52,8 @@ export default function ServiceVCISO() {
               <div className={styles.statDesc}>of SMBs have no dedicated security officer</div>
             </div>
             <div className={styles.statItem}>
-              <div className={styles.statVal}>$300K</div>
-              <div className={styles.statDesc}>average full-time CISO cost — vs $3–6K/mo fractional</div>
+              <div className={styles.statVal}>contact usK</div>
+              <div className={styles.statDesc}>average full-time CISO cost — vs contact usK/mo fractional</div>
             </div>
             <div className={styles.statItem}>
               <div className={styles.statVal}>86<span>%</span></div>
@@ -88,12 +88,12 @@ export default function ServiceVCISO() {
           </div>
           <div className={styles.pricingBox}>
             <div className={styles.pricingLabel}>Fractional vCISO Retainer</div>
-            <div className={styles.pricingVal}>$3,000–$6,000<span style={{fontSize:'14px',fontWeight:400}}>/mo</span></div>
-            <div className={styles.pricingNote}>Monthly · 8–20 hrs · direct access</div>
+            <div className={styles.pricingVal}>contact us<span style={{fontSize:'14px',fontWeight:400}}>/mo</span></div>
+            <div className={styles.pricingNote}>Scope defined per engagement</div>
             <div className={styles.pricingDivider}/>
-            <div className={styles.pricingAddon}><span>Add M365 hardening</span><span className={styles.addonVal}>+$2,500 one-time</span></div>
-            <div className={styles.pricingAddon}><span>Add IAM audit</span><span className={styles.addonVal}>+$4,000 one-time</span></div>
-            <div className={styles.pricingAddon}><span>Add risk assessment</span><span className={styles.addonVal}>+$2,000 one-time</span></div>
+            <div className={styles.pricingAddon}><span>Add M365 hardening</span><span className={styles.addonVal}>On request</span></div>
+            <div className={styles.pricingAddon}><span>Add IAM audit</span><span className={styles.addonVal}>On request</span></div>
+            <div className={styles.pricingAddon}><span>Add risk assessment</span><span className={styles.addonVal}>On request</span></div>
             <Link to="/contact" className={styles.btnPrimary} style={{marginTop:'24px',display:'block',textAlign:'center'}}>Start the Conversation</Link>
           </div>
         </div>

@@ -66,7 +66,7 @@ export default function ServiceAssessment() {
               <div className={styles.statDesc}>from discovery call to final report</div>
             </div>
             <div className={styles.statItem}>
-              <div className={styles.statVal}>$2K</div>
+              <div className={styles.statVal}>contact usK</div>
               <div className={styles.statDesc}>starting price — least expensive entry into a full security program</div>
             </div>
           </div>
@@ -100,12 +100,12 @@ export default function ServiceAssessment() {
           </div>
           <div className={styles.pricingBox}>
             <div className={styles.pricingLabel}>Security Risk Assessment</div>
-            <div className={styles.pricingVal}>$2,000</div>
-            <div className={styles.pricingNote}>Flat fee · 1 week · NIST CSF based</div>
+            <div className={styles.pricingVal}>Contact us for pricing</div>
+            <div className={styles.pricingNote}>Scope defined per engagement</div>
             <div className={styles.pricingDivider}/>
-            <div className={styles.pricingAddon}><span>Add M365 hardening</span><span className={styles.addonVal}>+$2,500</span></div>
-            <div className={styles.pricingAddon}><span>Add SOC 2 readiness</span><span className={styles.addonVal}>+$4,500</span></div>
-            <div className={styles.pricingAddon}><span>Add HIPAA gap assessment</span><span className={styles.addonVal}>+$2,000</span></div>
+            <div className={styles.pricingAddon}><span>Add M365 hardening</span><span className={styles.addonVal}>On request</span></div>
+            <div className={styles.pricingAddon}><span>Add SOC 2 readiness</span><span className={styles.addonVal}>On request</span></div>
+            <div className={styles.pricingAddon}><span>Add HIPAA gap assessment</span><span className={styles.addonVal}>On request</span></div>
             <Link to="/contact" className={styles.btnPrimary} style={{marginTop:'24px',display:'block',textAlign:'center'}}>Book Assessment</Link>
           </div>
         </div>

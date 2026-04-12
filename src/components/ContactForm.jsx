@@ -166,7 +166,7 @@ export default function ContactForm() {
 
       {status === 'error' && (
         <div className={styles.submitError}>
-          Something went wrong. Please email us directly at admin@cyvetting.com
+          Something went wrong. Please email us directly at contact@cyvetting.com
         </div>
       )}
 

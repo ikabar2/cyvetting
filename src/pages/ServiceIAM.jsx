@@ -55,7 +55,7 @@ export default function ServiceIAM() {
               <div className={styles.statDesc}>from kickoff to final report</div>
             </div>
             <div className={styles.statItem}>
-              <div className={styles.statVal}>$4K</div>
+              <div className={styles.statVal}>contact usK</div>
               <div className={styles.statDesc}>starting price — flat fee, no surprises</div>
             </div>
           </div>
@@ -87,12 +87,12 @@ export default function ServiceIAM() {
           </div>
           <div className={styles.pricingBox}>
             <div className={styles.pricingLabel}>IAM Advisory & Audit</div>
-            <div className={styles.pricingVal}>$4,000–$7,000</div>
-            <div className={styles.pricingNote}>Flat fee · 2–3 weeks · read-only</div>
+            <div className={styles.pricingVal}>Contact us for pricing</div>
+            <div className={styles.pricingNote}>Scope defined per engagement</div>
             <div className={styles.pricingDivider}/>
-            <div className={styles.pricingAddon}><span>Add M365 hardening</span><span className={styles.addonVal}>+$2,500</span></div>
-            <div className={styles.pricingAddon}><span>Add vCISO retainer</span><span className={styles.addonVal}>from $3K/mo</span></div>
-            <div className={styles.pricingAddon}><span>Add access review program</span><span className={styles.addonVal}>+$2,000</span></div>
+            <div className={styles.pricingAddon}><span>Add M365 hardening</span><span className={styles.addonVal}>On request</span></div>
+            <div className={styles.pricingAddon}><span>Add vCISO retainer</span><span className={styles.addonVal}>On request</span></div>
+            <div className={styles.pricingAddon}><span>Add access review program</span><span className={styles.addonVal}>On request</span></div>
             <Link to="/contact" className={styles.btnPrimary} style={{marginTop:'24px',display:'block',textAlign:'center'}}>Book IAM Audit</Link>
           </div>
         </div>

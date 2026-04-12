@@ -10,7 +10,7 @@ export default function Footer() {
           <Link to="/" className={styles.logoWrap}>
             <LogoFull height={40} />
           </Link>
-          <p>Enterprise cybersecurity for the modern threat landscape. Protecting businesses in Dallas, Nashville, Phoenix, Buffalo, and beyond.</p>
+          <p>Enterprise cybersecurity for the modern threat landscape. Serving Buffalo, NY · Niagara Region, ON · Remote nationwide.</p>
           {/* SOCIAL LINKS */}
           <div className={styles.social}>
             <a
@@ -70,10 +70,10 @@ export default function Footer() {
           </ul>
           <h4 style={{marginTop:'28px'}}>Contact</h4>
           <ul>
-            <li><a href="mailto:admin@cyvetting.com">admin@cyvetting.com</a></li>
-            <li>Dallas, TX</li>
-            <li>Nashville, TN</li>
-            <li>Phoenix, AZ  ·  Buffalo, NY</li>
+            <li><a href="mailto:contact@cyvetting.com">contact@cyvetting.com</a></li>
+            <li>Buffalo, NY</li>
+            <li>Niagara Region, ON</li>
+            <li>Remote · Relocation on request</li>
           </ul>
         </div>
       </div>
