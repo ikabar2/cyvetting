@@ -21,7 +21,7 @@
   position: absolute;
   top: 20%; left: 30%;
   width: 600px; height: 600px;
-  background: radial-gradient(circle, rgba(74,144,217,0.04) 0%, transparent 70%);
+  background: radial-gradient(circle, rgba(245,197,24,0.04) 0%, transparent 70%);
   pointer-events: none;
 }
 
@@ -39,7 +39,7 @@
 .tag {
   font-family: var(--mono);
   font-size: 0.78rem;
-  color: var(--accent);
+  color: #f5c518;
   letter-spacing: 0.2em;
   margin-bottom: 28px;
 }
@@ -62,7 +62,7 @@
 .desc {
   font-family: 'IBM Plex Sans', sans-serif;
   font-size: 1.05rem;
-  color: var(--muted);
+  color: rgba(255,255,255,0.55);
   font-weight: 300;
   line-height: 1.8;
   margin-bottom: 44px;
@@ -84,7 +84,7 @@
   letter-spacing: 0.04em;
   padding: 16px 36px;
   background: #f5c518;
-  color: #0c1a2e;
+  color: #0f2240;
   font-weight: 700;
   text-decoration: none;
   clip-path: polygon(10px 0%, 100% 0%, calc(100% - 10px) 100%, 0% 100%);
@@ -99,12 +99,12 @@
   letter-spacing: 0.04em;
   padding: 15px 36px;
   background: transparent;
-  color: var(--accent);
+  color: #f5c518;
   text-decoration: none;
-  border: 1px solid var(--accent);
+  border: 1px solid #f5c518;
   transition: all 0.25s;
 }
-.btnGhost:hover { background: rgba(74,144,217,0.06); transform: translateY(-2px); }
+.btnGhost:hover { background: rgba(255,255,255,0.06); transform: translateY(-2px); }
 
 /* STATS */
 .stats {
@@ -128,13 +128,13 @@
 }
 .statVal span {
   font-size: 1.1rem;
-  color: var(--accent);
+  color: #f5c518;
   font-weight: 400;
 }
 .statLabel {
   font-family: 'IBM Plex Sans', sans-serif;
   font-size: 0.72rem;
-  color: var(--muted);
+  color: rgba(255,255,255,0.55);
   font-weight: 400;
   letter-spacing: 0.05em;
   text-transform: uppercase;
@@ -163,12 +163,12 @@
 }
 .dotRed  { background: var(--accent3); opacity: 0.7; }
 .dotLime { background: var(--accent2); opacity: 0.7; }
-.dotBlue { background: var(--accent);  opacity: 0.7; }
+.dotBlue { background: #f5c518;  opacity: 0.7; }
 
 .termTitle {
   font-family: var(--mono);
   font-size: 0.72rem;
-  color: var(--muted);
+  color: rgba(255,255,255,0.55);
   margin-left: 8px;
   letter-spacing: 0.05em;
 }
@@ -186,8 +186,8 @@
   line-height: 1.4;
 }
 .t_lime  { color: var(--accent2); }
-.t_blue  { color: var(--accent); }
-.t_muted { color: var(--muted); }
+.t_blue  { color: #f5c518; }
+.t_muted { color: rgba(255,255,255,0.55); }
 .t_red   { color: var(--accent3); }
 
 @media (max-width: 1024px) {

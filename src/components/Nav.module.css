@@ -40,8 +40,8 @@
   position: relative;
 }
 .links a:hover,
-.dropdown:hover { color: var(--text); }
-.active { color: var(--accent2) !important; }
+.dropdown:hover { color: #ffffff; }
+.active { color: #f5c518 !important; }
 
 .dropdown { position: relative; }
 .dropMenu {
@@ -61,7 +61,7 @@
 .dropMenu a {
   font-family: 'IBM Plex Sans', sans-serif;
   font-size: 0.82rem;
-  color: var(--text);
+  color: #ffffff;
   padding: 12px 20px;
   text-decoration: none;
   border-bottom: 1px solid #2a1640;
@@ -70,7 +70,7 @@
 }
 .dropMenu a:last-child { border-bottom: none; }
 .dropMenu a:hover {
-  color: var(--accent2);
+  color: #f5c518;
   background: rgba(245,197,24,0.06);
   padding-left: 28px;
 }
@@ -82,14 +82,14 @@
   letter-spacing: 0.06em;
   padding: 10px 24px;
   background: transparent;
-  color: var(--accent2);
+  color: #f5c518;
   text-decoration: none;
-  border: 1px solid var(--accent2);
+  border: 1.5px solid #f5c518;
   transition: all 0.2s;
   flex-shrink: 0;
   white-space: nowrap;
 }
-.cta:hover { background: rgba(245,197,24,0.08); }
+.cta:hover { background: rgba(245,197,24,0.10); }
 
 @media (max-width: 900px) {
   .nav { padding: 0 24px; }

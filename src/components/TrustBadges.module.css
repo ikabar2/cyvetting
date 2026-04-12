@@ -55,7 +55,7 @@
 .lime::before { background: var(--accent2); }
 .blue::before { background: var(--accent); }
 .badge:hover.lime { border-color: rgba(245,197,24,0.35); }
-.badge:hover.blue { border-color: rgba(74,144,217,0.35); }
+.badge:hover.blue { border-color: rgba(245,197,24,0.35); }
 
 .badgeTitle {
   font-family: var(--mono);
@@ -67,7 +67,7 @@
   line-height: 1.5;
 }
 .lime .badgeTitle { color: var(--accent2); }
-.blue .badgeTitle { color: var(--accent); }
+.blue .badgeTitle { color: #f5c518; }
 
 .badgeYear {
   font-family: var(--mono);

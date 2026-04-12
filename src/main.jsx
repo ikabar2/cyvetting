@@ -29,7 +29,7 @@ document.addEventListener('keydown', e => {
       window.outerWidth - window.innerWidth > threshold ||
       window.outerHeight - window.innerHeight > threshold
     ) {
-      document.body.innerHTML = '<div style="display:flex;align-items:center;justify-content:center;height:100vh;background:#050a0f;font-family:monospace;color:#aaff00;font-size:1rem;">Access restricted.</div>'
+      document.body.innerHTML = '<div style="display:flex;align-items:center;justify-content:center;height:100vh;background:#0f2240;font-family:monospace;color:#f5c518;font-size:1rem;">Access restricted.</div>'
     }
   }
   window.addEventListener('resize', check)
@@ -42,7 +42,7 @@ document.addEventListener('selectstart', e => {
 
 // 5. Console warning
 console.clear()
-console.log('%c⚠ Stop!', 'color:#aaff00;background:#050a0f;font-size:32px;font-weight:bold;padding:8px 16px;')
+console.log('%c⚠ Stop!', 'color:#f5c518;background:#0f2240;font-size:32px;font-weight:bold;padding:8px 16px;')
 console.log('%cThis browser console is for developers only. Do not paste code here — it could compromise your security.', 'color:#ff3b6e;font-size:14px;')
 
 createRoot(document.getElementById('root')).render(

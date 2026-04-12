@@ -49,13 +49,13 @@
 .input:focus,
 .select:focus,
 .textarea:focus {
-  border-color: var(--accent);
+  border-color: #f5c518;
   box-shadow: 0 0 0 3px rgba(245,197,24,0.06);
 }
 
 .select {
   cursor: pointer;
-  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='8' viewBox='0 0 12 8'%3E%3Cpath d='M1 1l5 5 5-5' stroke='%235a7a90' stroke-width='1.5' fill='none' stroke-linecap='round'/%3E%3C/svg%3E");
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='8' viewBox='0 0 12 8'%3E%3Cpath d='M1 1l5 5 5-5' stroke='%23ffffff' stroke-width='1.5' fill='none' stroke-linecap='round'/%3E%3C/svg%3E");
   background-repeat: no-repeat;
   background-position: right 16px center;
   padding-right: 40px;
@@ -159,7 +159,7 @@
   font-size: 0.7rem;
   letter-spacing: 0.1em;
   text-transform: uppercase;
-  color: var(--accent);
+  color: #f5c518;
   background: transparent;
   border: 1px solid rgba(245,197,24,0.2);
   padding: 10px 24px;
@@ -167,7 +167,7 @@
   transition: all 0.25s;
 }
 .resetBtn:hover {
-  border-color: var(--accent);
+  border-color: #f5c518;
   background: rgba(245,197,24,0.05);
 }
 
@@ -211,7 +211,7 @@
   padding: 18px 32px;
   margin-top: 8px;
   background: var(--accent2, #f5c518);
-  color: #0c1a2e;
+  color: #0f2240;
   font-family: 'IBM Plex Sans', sans-serif;
   font-size: 1rem;
   font-weight: 600;
@@ -244,7 +244,7 @@
 
 .btn:disabled {
   background: #b8960a;
-  color: #0c1a2e;
+  color: #0f2240;
   cursor: not-allowed;
 }
 

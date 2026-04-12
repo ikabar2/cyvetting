@@ -7,7 +7,7 @@
 .label {
   font-family: var(--mono);
   font-size: 0.7rem;
-  color: var(--accent);
+  color: #f5c518;
   letter-spacing: 0.25em;
   text-transform: uppercase;
   margin-bottom: 16px;
@@ -26,7 +26,7 @@
   line-height: 1.1;
   margin-bottom: 64px;
 }
-.title em { font-style: normal; color: var(--accent); }
+.title em { font-style: normal; color: #f5c518; }
 
 .grid {
   display: grid;

@@ -13,7 +13,7 @@ export default function TrustBadges() {
         <div className={`${styles.badge} ${styles.lime}`}>
           <svg width="36" height="40" viewBox="0 0 36 40" xmlns="http://www.w3.org/2000/svg">
             <path d="M18 2 L34 8 L34 20 C34 28 26 35 18 38 C10 35 2 28 2 20 L2 8 Z" fill="none" stroke="#f5c518" strokeWidth="1.5"/>
-            <path d="M11 20 L16 25 L25 15" fill="none" stroke="#4a90d9" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+            <path d="M11 20 L16 25 L25 15" fill="none" stroke="#f5c518" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
           </svg>
           <div className={styles.badgeTitle}>Verified<br/>Consultant</div>
           <div className={styles.badgeYear}>2026</div>
@@ -22,7 +22,7 @@ export default function TrustBadges() {
         {/* Badge 2 */}
         <div className={`${styles.badge} ${styles.blue}`}>
           <svg width="40" height="36" viewBox="0 0 40 36" xmlns="http://www.w3.org/2000/svg">
-            <polygon points="20,2 36,11 36,25 20,34 4,25 4,11" fill="none" stroke="#4a90d9" strokeWidth="1.5"/>
+            <polygon points="20,2 36,11 36,25 20,34 4,25 4,11" fill="none" stroke="#f5c518" strokeWidth="1.5"/>
             <text fontFamily="Share Tech Mono, monospace" fontSize="9" fill="#f5c518" x="20" y="19" textAnchor="middle" dominantBaseline="central" fontWeight="700">SOC 2</text>
           </svg>
           <div className={styles.badgeTitle}>Compliance<br/>Specialist</div>
@@ -33,7 +33,7 @@ export default function TrustBadges() {
         <div className={`${styles.badge} ${styles.lime}`}>
           <svg width="36" height="36" viewBox="0 0 36 36" xmlns="http://www.w3.org/2000/svg">
             <polygon points="18,2 34,18 18,34 2,18" fill="none" stroke="#f5c518" strokeWidth="1.5"/>
-            <polygon points="18,8 28,18 18,28 8,18" fill="none" stroke="#4a90d9" strokeWidth="0.8" opacity="0.5"/>
+            <polygon points="18,8 28,18 18,28 8,18" fill="none" stroke="#f5c518" strokeWidth="0.8" opacity="0.5"/>
           </svg>
           <div className={styles.badgeTitle}>HIPAA · PCI<br/>Practitioner</div>
           <div className={styles.badgeYear}>2026</div>
